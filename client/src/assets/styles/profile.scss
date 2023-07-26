@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+.profile {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+
+  .profileInfo {
+    width: 30%;
+    height: 100%;
+
+    border-right: 1px solid lightgrey;
+
+    .profileImage {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      width: 100%;
+      height: 10vh;
+      border-bottom: 1px solid lightgrey;
+
+      img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+
+    .profileInfoItems {
+      cursor: pointer;
+      padding: 20px;
+      border-bottom: 1px solid lightgrey;
+    }
+
+    .toggel {
+      background-color: lightgrey;
+      color: black;
+    }
+
+    
+  }
+
+  .profileProductSection {
+    position: relative;
+    width: 70%;
+    height: 100%;
+
+    .addButton {
+      position: fixed;
+      z-index: 10;
+
+      right: 30px;
+      bottom: 20px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      font-size: 50px;
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      color: white;
+      background-color: black;
+    }
+
+    overflow-y:scroll;
+  }
+}
+
+.modalForm {
+  height: 500px;
+
+  .inputContainer {
+    width: 100%;
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+
+    .fileInput {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      label {
+        width: 45%;
+        height: 45%;
+        border: 1px solid lightgrey;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: grey;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      input {
+        display: none;
+      }
+    }
+
+    .valueInput {
+      width: 50%;
+      height: 100%;
+      padding: 0px 20px;
+      padding-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+
+      input {
+        width: 100%;
+        height: 40px;
+        border: 1px solid lightgrey;
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+
+
+      select {
+        width: 100%;
+        height: 40px;
+        border: 1px solid lightgrey;
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+
+      .disable {
+        display: none;
+      }
+    }
+  }
+
+  .formButton {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    button {
+      width: 100%;
+      height: 40px;
+      background-color: black;
+      color: white;
+    }
+  }
+
+}

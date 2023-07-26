@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+.adminChat {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+
+  .profileInfo {
+    width: 30%;
+    height: 100%;
+
+    border-right: 1px solid lightgrey;
+
+    .profileImage {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      width: 100%;
+      height: 10vh;
+      border-bottom: 1px solid lightgrey;
+
+      img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+
+    .customerInfoItems {
+      cursor: pointer;
+      padding: 20px;
+      border-bottom: 1px solid lightgrey;
+      display: flex;
+      align-items: center;
+
+      img{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: 1px solid grey;
+        margin-right: 10px;
+      }
+
+      p{
+        padding: 0px;
+        margin: 0px;
+      }
+    }
+
+    .toggel {
+      background-color: lightgrey;
+      color: black;
+    }
+  }
+
+  .chatSection {
+    width: 70%;
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
